@@ -597,11 +597,11 @@ class TestHomeworkDogAPI(unittest.TestCase):
                 }
             },
         }
-        # create_cache(cache, self.test_cache_file)
-        # self.assertEqual(
-        #     recommend_breeds_in_same_group("breed a", self.test_cache_file),
-        #     ["Breed B", "Breed Z"],
-        # )
+        create_cache(cache, self.test_cache_file)
+        self.assertEqual(
+            recommend_breeds_in_same_group("breed a", self.test_cache_file),
+            ["Breed B", "Breed Z"],
+        )
     
 
 
